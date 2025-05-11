@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aalim Muhamed Salegh COE Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-box">
+
+    <div class="header">
+      <img src="https://i.ibb.co/Z5Mgwxt/download-4.jpg" class="logo-left">
+      <div class="title-box">
+        <h1>Aalim Muhamed Salegh College of Engineering</h1>
+        <h3>Office of the Controller of Examinations<br>Pre-Examination Monitoring System</h3>
+      </div>
+      <img src="https://i.ibb.co/Z5Mgwxt/download-4.jpg" class="logo-right">
+    </div>
+
+    <div class="welcome-banner">
+      <h2>Welcome to Office of the Controller of Examinations</h2>
+      <p>Pre-Examination Monitoring System</p>
+    </div>
+
+    <div class="login-container">
+      <!-- Institution Login -->
+      <div class="login-box">
+        <h3>Institution login</h3>
+        <label>Institution Code:</label>
+        <input type="text">
+        <label>Password:</label>
+        <input type="password">
+        <!-- Student Login Captcha -->
+<div class="captcha" id="captchaStudent" onclick="generateCaptcha('captchaStudent')">Click to generate</div>
+<span class="play-text" onclick="speakCaptcha('captchaStudent')">▶ Play</span>
+
+        <input type="text">
+        <a href="#" class="forgot-link">Forgot Password</a>
+        <button>Login</button>
+      </div>
+
+      <!-- Student Login -->
+      <div class="login-box">
+        <h3>Student login</h3>
+        <label>Register Number:</label>
+        <input type="text">
+        <label>Date of Birth<br>[DD-MM-YYYY]</label>
+        <input type="text">
+        <!-- Institution Login Captcha -->
+<div class="captcha" id="captchaInstitution" onclick="generateCaptcha('captchaInstitution')">Click to generate</div>
+<span class="play-text" onclick="speakCaptcha('captchaInstitution')">▶ Play</span>
+
+        <input type="text">
+        <button>Login</button>
+      </div>
+
+      <!-- Announcements -->
+<div class="news-box">
+  <!-- Announcements -->
+<div class="news-box">
+  <div class="news-header">
+    <h4>📢 Attention! All Students</h4>
+    <a href="news.html" class="view-all">🔗 View All</a>
+  </div>
+  <div class="news-container" id="newsContainer">
+    <ul class="news-list">
+      <li><span class="red">*Important:-</span> April/May 2025 – Practical Exam Schedule Released <a href="#">Click Here</a></li>
+      <li><span class="blue">*Note:-</span> Kindly Download Your Hall Ticket from Portal <a href="#">Click Here</a></li>
+      <li><span class="red">*Special Notice:-</span> Internal Mark Entry Deadline Announced <a href="#">Click Here</a></li>
+      <li><span class="blue">*New:-</span> Online Exam Practice Portal Opened <a href="#">Click Here</a></li>
+      <li><span class="red">*Alert:-</span> Do not share login credentials with anyone!</li>
+    </ul>
+  </div>
+</div>
+
+
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div id="resultsSection"></div>
+
