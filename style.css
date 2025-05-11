@@ -125,6 +125,7 @@ body {
   text-decoration: underline;
 }
 
+/* Captcha */
 .captcha {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
@@ -138,13 +139,13 @@ body {
   user-select: none;
   transform: rotate(-1deg);
   text-shadow: 1px 1px 1px #ccc;
-  margin-top: 5px;
 }
 
 .captcha:hover {
   background-color: #e0e0e0;
 }
 
+/* News Section */
 .news-box {
   width: 100%;
   max-width: 400px;
@@ -179,9 +180,12 @@ body {
 }
 
 .news-list li {
-  padding: 10px;
-  font-size: 14px;
+  padding: 6px 10px;
+  font-size: 13px;
   border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news-list li a {
@@ -199,8 +203,9 @@ body {
   font-weight: bold;
 }
 
+/* Scroll animation */
 @keyframes scrollUp {
-  0% { transform: translateY(0%); }
+  0%   { transform: translateY(0%); }
   100% { transform: translateY(-100%); }
 }
 
