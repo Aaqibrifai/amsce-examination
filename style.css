@@ -156,6 +156,7 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
 }
 
 .news-box h4 {
@@ -224,4 +225,39 @@ body {
 
 .view-all-link a:hover {
   color: #ff5722;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .main-box {
+    padding: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .news-box {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .news-container {
+    height: auto;
+  }
+
+  .news-list li {
+    font-size: 12px;
+  }
 }
