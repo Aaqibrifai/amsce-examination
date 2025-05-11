@@ -1,222 +1,130 @@
 body {
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f6f6f6;
-  }
-  
-  .main-box {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #002147;
-    color: white;
-    padding: 20px;
-  }
-  
-  .logo-left, .logo-right {
-    height: 80px;
-    width: 80px;
-    object-fit: contain;
-  }
-  
-  .title-box {
-    text-align: center;
-  }
-  
-  .title-box h1 {
-    margin: 0;
-    font-size: 22px;
-    font-weight: bold;
-  }
-  
-  .title-box h3 {
-    margin: 5px 0 0;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .welcome-banner {
-    background: #153e78;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
-  .login-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .login-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 380px;
-    background: #f9f9f9;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .login-box h3 {
-    margin-bottom: 15px;
-    color: #153e78;
-  }
-  
-  .login-box label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .login-box input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-box button {
-    margin-top: 15px;
-    width: 100%;
-    background: #153e78;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .login-box button:hover {
-    background: #001f4d;
-  }
-  
-  .play-text {
-    color: blue;
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 13px;
-    margin-left: 10px;
-  }
-  
-  .forgot-link {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 13px;
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  .forgot-link:hover {
-    text-decoration: underline;
-  }
-  
-  .captcha {
-    margin-top: 5px;
-    background: #e2e2e2;
-    padding: 8px;
-    text-align: center;
-    font-family: monospace;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .news-box {
-    width: 100%;
-    max-width: 400px;
-    height: 200px;
-    background: #f9f9f9;
-    border: 2px solid #dcdcdc;
-    padding: 10px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .news-box h4 {
-    background: #0366d6;
-    color: white;
-    padding: 10px;
-    margin: 0;
-    font-size: 16px;
-  }
-  
-  .news-container {
-    height: 150px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .news-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    animation: scrollUp 12s linear infinite;
-  }
-  
-  .news-list li {
-    padding: 10px;
-    font-size: 14px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .news-list li a {
-    color: #0366d6;
-    text-decoration: none;
-  }
-  
-  .red {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .blue {
-    color: blue;
-    font-weight: bold;
-  }
-  
-  /* Scroll animation */
-  @keyframes scrollUp {
-    0%   { transform: translateY(0%); }
-    100% { transform: translateY(-100%); }
-  }
-  .view-all-link {
-    text-align: right;
-    margin-top: 5px;
-  }
-  
-  .view-all-link a {
-    font-size: 14px;
-    color: #0366d6;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .view-all-link a:hover {
-    color: #ff5722;
-  }
-  .play-text {
-    cursor: pointer;
-    color: blue;
-    font-size: 14px;
-    margin-left: 10px;
-  }
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f6f6;
+}
+
+.main-box {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #002147;
+  color: white;
+  padding: 20px;
+}
+
+.logo-left, .logo-right {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.title-box {
+  text-align: center;
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.title-box h3 {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.welcome-banner {
+  background: #153e78;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.login-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.login-box h3 {
+  margin-bottom: 15px;
+  color: #153e78;
+}
+
+.login-box label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  margin-top: 15px;
+  width: 100%;
+  background: #153e78;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #001f4d;
+}
+
+.play-text {
+  font-size: 18px;
+  color: green;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.forgot-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
 .captcha {
   font-family: 'Courier New', Courier, monospace;
   font-size: 24px;
@@ -230,17 +138,85 @@ body {
   user-select: none;
   transform: rotate(-1deg);
   text-shadow: 1px 1px 1px #ccc;
+  margin-top: 5px;
 }
 
 .captcha:hover {
   background-color: #e0e0e0;
 }
 
-.play-text {
-  font-size: 18px;
-  color: green;
-  cursor: pointer;
-  margin-left: 10px;
+.news-box {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  background: #f9f9f9;
+  border: 2px solid #dcdcdc;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-  
-  
+
+.news-box h4 {
+  background: #0366d6;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.news-container {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  animation: scrollUp 12s linear infinite;
+}
+
+.news-list li {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-list li a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-100%); }
+}
+
+.view-all-link {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.view-all-link a {
+  font-size: 14px;
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.view-all-link a:hover {
+  color: #ff5722;
+}
