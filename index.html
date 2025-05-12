@@ -24,34 +24,34 @@
       <p>Pre-Examination Monitoring System</p>
     </div>
 
-    <!-- Login Section: All 3 boxes in one row -->
+    <!-- Login Section -->
     <div class="login-container">
 
       <!-- Institution Login -->
       <div class="login-box">
         <h3>Institution Login</h3>
         <label>Institution Code:</label>
-        <input type="text">
+        <input type="text" name="regId">
         <label>Password:</label>
-        <input type="password">
+        <input type="password" name="password">
         <div class="captcha" id="captchaInstitution" onclick="generateCaptcha('captchaInstitution')">Click to generate</div>
         <span class="play-text" onclick="speakCaptcha('captchaInstitution')">▶ Play</span>
-        <input type="text" placeholder="Enter Captcha">
+        <input type="text" name="captcha" placeholder="Enter Captcha">
         <a href="#" class="forgot-link">Forgot Password?</a>
-        <button>Login</button>
+        <button id="institutionLoginBtn">Login</button>
       </div>
 
       <!-- Student Login -->
       <div class="login-box">
         <h3>Student Login</h3>
         <label>Register Number:</label>
-        <input type="text">
+        <input type="text" name="regNo">
         <label>Date of Birth [DD-MM-YYYY]:</label>
-        <input type="text">
+        <input type="text" name="dob">
         <div class="captcha" id="captchaStudent" onclick="generateCaptcha('captchaStudent')">Click to generate</div>
         <span class="play-text" onclick="speakCaptcha('captchaStudent')">▶ Play</span>
-        <input type="text" placeholder="Enter Captcha">
-        <button>Login</button>
+        <input type="text" name="captcha" placeholder="Enter Captcha">
+        <button id="studentLoginBtn">Login</button>
       </div>
 
       <!-- News Announcements -->
@@ -60,7 +60,7 @@
           <h4>📢 Attention! All Students</h4>
           <a href="news.html" class="view-all">🔗 View All</a>
         </div>
-        <div class="news-container">
+        <div class="news-container" id="newsContainer">
           <ul class="news-list">
             <li><span class="red">*Important:-</span> April/May 2025 – Practical Exam Schedule Released <a href="#">Click Here</a></li>
             <li><span class="blue">*Note:-</span> Kindly Download Your Hall Ticket <a href="#">Click Here</a></li>
