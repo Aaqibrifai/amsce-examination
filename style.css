@@ -135,8 +135,9 @@ body {
 /* Flexbox adjustments for login section */
 .login-container {
   display: flex;
+  gap: 20px; /* controls spacing between all boxes */
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
@@ -248,9 +249,17 @@ body {
   }
 
   .news-box {
-    max-width: 100%;
-    height: auto;
-  }
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  height: 200px;
+  background: #f9f9f9;
+  border: 2px solid #dcdcdc;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
   .news-container {
     height: auto;
