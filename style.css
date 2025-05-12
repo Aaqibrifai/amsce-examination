@@ -63,7 +63,6 @@ body {
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin-top: 20px;
-  order: 1; /* Ensures it stays on top */
 }
 
 .news-box h4 {
@@ -139,7 +138,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
-  order: 2; /* Ensures login section stays below the news box */
 }
 
 .login-box {
